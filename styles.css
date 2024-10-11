@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: odinFont;
+  src: url("images/Norse-Bold.otf");
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 400px;
+  background-color: aqua;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-text {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.image-text img {
+  width: 20%;
+  height: 20%;
+  overflow: hidden;
+}
+
+.image-text span {
+  font-family: odinFont;
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  width: 500px;
+}
+
+.header {
+  width: 100%;
+  height: 40%;
+  border: 1px solid black;
+  background-color: lightgrey;
+  display: flex;
+}
+
+.header-text {
+  justify-content: flex-start;
+  align-self: center;
+  flex-basis: 450px;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.subtext {
+  margin-top: 170px;
+  margin-left: -430px;
+  color: black;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-content {
+  width: 100%;
+  height: 30%;
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 40px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 2px solid #e5e7eb;
+  box-shadow: 5px 5px 5px black;
+}
+
+.form-group input[type="password"]:focus {
+  outline: none;
+  border: 1px solid red;
+}
+
+.logon {
+  width: 100%;
+  height: 30%;
+  border: 1px solid black;
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logon p {
+  margin: 10px;
+}
+
+a {
+  color: #596d48;
+}
